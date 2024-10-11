@@ -1,0 +1,25 @@
+meta {
+  name: update one
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/users/0
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyIiwiaWF0IjoxNzI4NjY0MjU4LCJzdWIiOiJlQGdtYWlsLmNvbSIsImlzcyI6Ik1haW4iLCJleHAiOjE3MjkyNjkwNTh9.rsIhN8duLkPRw8qblrel2iG8ySN5fMnOxK3zPwLz4-0
+}
+
+body:json {
+  {
+    "firstName": "Esteban",
+    "lastName": "Castel",
+    "email": "ej@gmail.com",
+    "phone": "1234567890",
+    "password": "123"
+  }
+}
